@@ -47,13 +47,9 @@ GPU：NVIDIA TITAN V
 本文所使用的原始数据可以在`REFIT_source`文件夹中找到，经过预处理（数据清洗）之后的数据可以在`REFIT_processed`文件夹中找到。然后在脚本`data_process.ipynb`中对数据进行了清洗工作。
 > 注意代码库里面的数据是用压缩形式保存的.zip，使用前需要将压缩包解压到当前文件夹中。
 
+原始数据：
 ![原始数据](./image/SourceData.png)
-图3 原始数据
-
 ![原始数据表](./image/SourceDataTable.jpg)
-图4 原始数据部分展示
-
-
 
 ## 复现
 
@@ -98,32 +94,28 @@ GPU：NVIDIA TITAN V
 
 ## 结果
 
+### 训练结果表
 每个训练结果都会保存到--save指定的文件夹中，例如`tuning_w6/`。使用`.sh`脚本所产生的结果如下：
 ![训练结果表](./image/ResultTable.jpg)
 
-图5 训练结果表
----
 
-
+### 窗口的影响
 TCN 的对更长的历史窗口的信息捕获能力表现得更为明显，随着窗口增加，精度呈现出下降趋势，在窗口大小为 386 时预测误差达到了最小。
-
 ![窗口-精度](./image/line.jpg)
 
-图6 窗口大小对模型的影响
-
----
 
 
-历史窗口大小为 48时，在曲线上模型预测的具体表现。
 
+### 历史窗口大小为 48时，在曲线上模型预测的具体表现。    
+
+窗口为48时，Aggregate曲线
 ![Aggregate曲线](./image/Cure.jpg)
-图7 窗口为48时，Aggregate曲线
----
 
 
+
+窗口为48时Appliance1曲线
 ![Appliance1曲线](./image/cure2.jpg)
-图8 窗口为48时Appliance1曲线
----
+
 
 ## 参考论文
 [Bai S, Kolter J Z, Koltun V. An empirical evaluation of generic convolutional and recurrent networks for sequence modeling[J]. arXiv preprint arXiv:1803.01271, 2018.](https://arxiv.org/abs/1803.01271)
