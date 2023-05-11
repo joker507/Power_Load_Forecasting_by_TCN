@@ -109,20 +109,21 @@ TCN 的对更长的历史窗口的信息捕获能力表现得更为明显，随�
 
 ![窗口-精度](./image/line.jpg)
 
-<center>图6 窗口大小对模型的影响</center>
+图6 窗口大小对模型的影响
 
+---
 
 
 历史窗口大小为 48时，在曲线上模型预测的具体表现。
 
 ![Aggregate曲线](./image/Cure.jpg)
-
-<center>图7 窗口为48时，Aggregate曲线</center>
-
+图7 窗口为48时，Aggregate曲线
+---
 
 
 ![Appliance1曲线](./image/Cure2.jpg)
-<center>图8 窗口为48时Appliance1曲线</center><br>
+图8 窗口为48时Appliance1曲线
+---
 
 ## 参考论文
 [Bai S, Kolter J Z, Koltun V. An empirical evaluation of generic convolutional and recurrent networks for sequence modeling[J]. arXiv preprint arXiv:1803.01271, 2018.](https://arxiv.org/abs/1803.01271)
