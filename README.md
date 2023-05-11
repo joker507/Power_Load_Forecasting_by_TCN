@@ -10,10 +10,10 @@
 
 TCN 不像图像卷积那样通过池化层扩大感受野，而是通过增大扩张因子以及增加层数对感受野进行扩大，这使得它能够接受更长的历史时序信息，从而降低预测的误差、提高准确率。通过残差连接能够使得网络的层数加深而不丢失准确性,这种跨层连接的结构使得信息可以在神经网络的不同层之间直接传递，而不会受到层数的限制，从而提高了神经网络的训练效率和准确性。TCN 的结构主要包括扩张因果卷积以及残差连接组成。
 
-![扩张因果卷积](./image\Dilated_Causal_Conv.png)
+![扩张因果卷积](./image/Dilated_Causal_Conv.png)
 <center>图1 扩张因果卷积</center>
 
-![基于TCN的电力负荷预测](./image\TCN.png)
+![基于TCN的电力负荷预测](./image/TCN.png)
 <center>图2 基于TCN的电力负荷预测</center>
 
 
@@ -47,10 +47,10 @@ GPU：NVIDIA TITAN V
 本文所使用的原始数据可以在`REFIT_source`文件夹中找到，经过预处理（数据清洗）之后的数据可以在`REFIT_processed`文件夹中找到。然后在脚本`data_process.ipynb`中对数据进行了清洗工作。
 > 注意代码库里面的数据是用压缩形式保存的.zip，使用前需要将压缩包解压到当前文件夹中。
 
-![原始数据](./image\SourceData.png)
+![原始数据](./image/SourceData.png)
 <center>图3 原始数据</center>
 
-![原始数据表](./image\SourceDataTable.jpg)
+![原始数据表](./image/SourceDataTable.jpg)
 <center>图4 原始数据部分展示</center>
 
 
@@ -99,7 +99,7 @@ GPU：NVIDIA TITAN V
 ## 结果
 
 每个训练结果都会保存到--save指定的文件夹中，例如`tuning_w6/`。使用`.sh`脚本所产生的结果如下：
-![训练结果表](./image\ResultTable.jpg)
+![训练结果表](./image/ResultTable.jpg)
 
 <center>图5 训练结果表</center>
 
@@ -107,7 +107,7 @@ GPU：NVIDIA TITAN V
 
 TCN 的对更长的历史窗口的信息捕获能力表现得更为明显，随着窗口增加，精度呈现出下降趋势，在窗口大小为 386 时预测误差达到了最小。
 
-![窗口-精度](./image\line.jpg)
+![窗口-精度](./image/line.jpg)
 
 <center>图6 窗口大小对模型的影响</center>
 
@@ -115,13 +115,13 @@ TCN 的对更长的历史窗口的信息捕获能力表现得更为明显，随�
 
 历史窗口大小为 48时，在曲线上模型预测的具体表现。
 
-![Aggregate曲线](./image\Cure.jpg)
+![Aggregate曲线](./image/Cure.jpg)
 
 <center>图7 窗口为48时，Aggregate曲线</center>
 
 
 
-![Appliance1曲线](./image\Cure2.jpg)
+![Appliance1曲线](./image/Cure2.jpg)
 <center>图8 窗口为48时Appliance1曲线</center><br>
 
 ## 参考论文
