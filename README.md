@@ -48,10 +48,10 @@ GPU：NVIDIA TITAN V
 > 注意代码库里面的数据是用压缩形式保存的.zip，使用前需要将压缩包解压到当前文件夹中。
 
 ![原始数据](./image/SourceData.png)
-<center>图3 原始数据</center>
+图3 原始数据
 
 ![原始数据表](./image/SourceDataTable.jpg)
-<center>图4 原始数据部分展示</center>
+图4 原始数据部分展示
 
 
 
@@ -101,8 +101,8 @@ GPU：NVIDIA TITAN V
 每个训练结果都会保存到--save指定的文件夹中，例如`tuning_w6/`。使用`.sh`脚本所产生的结果如下：
 ![训练结果表](./image/ResultTable.jpg)
 
-<center>图5 训练结果表</center>
-
+图5 训练结果表
+---
 
 
 TCN 的对更长的历史窗口的信息捕获能力表现得更为明显，随着窗口增加，精度呈现出下降趋势，在窗口大小为 386 时预测误差达到了最小。
@@ -121,7 +121,7 @@ TCN 的对更长的历史窗口的信息捕获能力表现得更为明显，随�
 ---
 
 
-![Appliance1曲线](./image/Cure2.jpg)
+![Appliance1曲线](./image/cure2.jpg)
 图8 窗口为48时Appliance1曲线
 ---
 
